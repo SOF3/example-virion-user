@@ -1,9 +1,7 @@
-name: Build
 on:
   push:
 jobs:
-  build:
-    name: Build phar
+  build-phar:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
