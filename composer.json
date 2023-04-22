@@ -1,0 +1,22 @@
+{
+    "name": "sof3/example-virion-user",
+    "description": "This is an example virion",
+    "type": "pocketmine-plugin",
+    "require": {
+        "pocketmine/pocketmine-mp": "^4.0.0",
+        "sof3/example-virion": "^0.1.0"
+    },
+    "require-dev": {
+        "sof3/pharynx": "^0.3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SOFe",
+            "email": "sofe2038@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["src"]
+    }
+}

@@ -1,0 +1,7 @@
+name: ExampleUserOfVirion
+main: SOFe\ExampleUserOfVirion\MainClass
+version: 0.1.0
+api: 4.0.0
+
+author: SOFe
+description: Example plugin showing the usage of virion
