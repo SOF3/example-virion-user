@@ -1,0 +1,24 @@
+name: Build
+on:
+  push:
+jobs:
+  build:
+    name: Build phar
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+      - uses: SOF3/pharynx@v0.1
+        id: pharynx
+        with:
+          pharynx-version: "0.3.0"
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ExampleUserOfVirion.phar
+          path: ${{steps.pharynx.outputs.output-phar}}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ExampleUserOfVirion
+          path: ${{steps.pharynx.outputs.output-dir}}
